@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andi-FA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 04:42:19 PM"/>
+        <attribute name="created" value="QW5kaS1GQTtNU0k7MjAyNC0wOS0yMzswODowMDoyOCBQTTsyMDc3"/>
+        <attribute name="edited" value="QW5kaS1GQTtNU0k7MjAyNC0wOS0yNTswNDo0MjoxOSBQTTs1OzIxOTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu, hasil, p, l, s" type="Integer" array="False" size=""/>
+            <output expression="&quot;Menu : 1. Luas Persegi Panjang 2. Keliling Persegi panjang 3. Luas Persegi 4. Keliling Persegi 5. Keluar Program&quot;" newline="True"/>
+            <input variable="menu"/>
+            <if expression="menu = 1">
+                <then>
+                    <output expression="&quot;Program Luas Persegi Panjang&quot;" newline="True"/>
+                    <output expression="&quot;Masukkan panjang&quot;" newline="True"/>
+                    <input variable="p"/>
+                    <output expression="&quot;Masukkan lebar&quot;" newline="True"/>
+                    <input variable="l"/>
+                    <assign variable="hasil" expression="p*l"/>
+                    <output expression="&quot;Luas Persegi Panjang adalah &quot; &amp; hasil" newline="True"/>
+                </then>
+                <else>
+                    <if expression="menu = 2">
+                        <then>
+                            <output expression="&quot;Program Keliling Persegi Panjang&quot;" newline="True"/>
+                            <output expression="&quot;Masukkan panjang&quot;" newline="True"/>
+                            <input variable="p"/>
+                            <output expression="&quot;Masukkan lebar&quot;" newline="True"/>
+                            <input variable="l"/>
+                            <assign variable="hasil" expression="p+p+l+l"/>
+                            <output expression="&quot;Keliling Persegi Panjang adalah &quot; &amp; hasil" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="menu = 3">
+                                <then>
+                                    <output expression="&quot;Program Luas Persegi&quot;" newline="True"/>
+                                    <output expression="&quot;Masukkan sisi&quot;" newline="True"/>
+                                    <input variable="s"/>
+                                    <assign variable="hasil" expression="s*s"/>
+                                    <output expression="&quot;Luas Persegi adalah &quot; &amp; hasil" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="menu = 4">
+                                        <then>
+                                            <output expression="&quot;Program Keliling Persegi&quot;" newline="True"/>
+                                            <output expression="&quot;Masukkan sisi&quot;" newline="True"/>
+                                            <input variable="s"/>
+                                            <assign variable="hasil" expression="s*4"/>
+                                            <output expression="&quot;Keliling Persegi adalah &quot; &amp; hasil" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="menu = 5">
+                                                <then>
+                                                    <output expression="&quot;Anda keluar dari program&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Pilihan tidak ada&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
